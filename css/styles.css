@@ -1,0 +1,161 @@
+@import url(theme.css);
+
+/* ---------- SECCIÓN DEL NAVBAR ---------- */
+
+/* Estilos para el navbar */
+.navbar {
+    /* Fija la barra de navegación en la parte superior */
+    position: sticky;
+    top: 0;
+    /* Establece un diseño flexible en filas */
+    display: flex;
+    /* Distribuye el espacio entre los elementos a lo largo del eje principal */
+    justify-content: space-between;
+    /* Alinea los elementos verticalmente en el centro */
+    align-items: center;
+    /* Color de fondo del navbar obtenido de una variable CSS */
+    background-color: var(--color-alternate);
+    /* Añade relleno al contenido del navbar */
+    padding: 3px 20px;
+}
+
+/* Estilos para el logo */
+.logo {
+    /* Establece un diseño flexible en filas */
+    display: flex;
+    /* Color del texto del logo obtenido de una variable CSS */
+    color: var(--color-info);
+    /* Establece un espacio entre los elementos del logo */
+    gap: 12px;
+    /* Alinea los elementos verticalmente en el centro */
+    align-items: center;
+}
+
+/* Estilos para los elementos del logo */
+.logo img,
+.logo hr {
+    /* Establece una altura para los elementos del logo */
+    height: 35px;
+}
+
+/* Estilos para los enlaces de navegación y botones */
+.nav-links,
+.navbar button {
+    /* Elimina la viñeta de lista y los márgenes */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* Hereda la fuente del elemento padre */
+    font: inherit;
+    /* Cambia el cursor al puntero al pasar sobre los enlaces y botones */
+    cursor: pointer;
+    /* Elimina el contorno al enfocar los enlaces y botones */
+    outline: none;
+    /* Elimina el borde de los botones */
+    border: none;
+    /* Establece el color de fondo transparente para los enlaces y botones */
+    background-color: transparent;
+    /* Establece un diseño flexible en filas */
+    display: flex;
+    /* Agregado para mantener flexibilidad */
+}
+
+/* Estilos para los elementos de la lista de navegación y botones */
+.nav-links li,
+.navbar button {
+    /* Establece un margen entre los elementos */
+    margin-left: 20px;
+}
+
+/* Estilos para los enlaces de la lista de navegación y botones */
+.nav-links li a,
+.navbar button {
+    /* Elimina el subrayado de los enlaces y establece el color del texto */
+    text-decoration: none;
+    color: var(--color-info);
+    /* Añade una transición suave al cambiar el color del texto */
+    transition: color 0.3s ease;
+}
+
+/* Estilos para los enlaces de la lista de navegación y botones al pasar el ratón sobre ellos */
+.nav-links li a:hover,
+.navbar button:hover {
+    /* Cambia el color del texto al pasar el ratón sobre los enlaces y botones */
+    color: var(--color-primary);
+}
+
+/* Estilos responsive */
+@media only screen and (max-width: 901px) {
+
+    /* Oculta los enlaces de navegación cuando la pantalla es más pequeña o igual a 901px */
+    .nav-links {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 901px) {
+
+    /* Oculta los botones de la barra de navegación cuando la pantalla es más grande que 901px */
+    .navbar button {
+        display: none;
+    }
+}
+
+.container-login {
+    background-color: var(--color-info);
+    width: 412px;
+    border-radius: 12px;
+    height: 275px;
+    
+    margin-top: 290px;
+    float: right; /* Ajustar al lado derecho */
+    margin-right: 300px; /* Margen derecho para separarlo del contenido */
+}
+
+
+.container-login form{
+    padding: 30px;
+    width: 10;
+    height: 12;
+    
+}
+
+.container-login label{
+    font-size: 16;
+    color: var(--color-primary);
+    margin-left: 2px;
+    
+   
+
+}
+.container-login input{
+    width: 95%;
+    padding: 5px;
+    border: 1px solid var(--background-secondary);
+    border-radius: 10px;
+    margin-left: 2px;
+    
+}
+
+.container-login a{
+    margin-left: 2px;
+    transition: color 0.3s ease;
+    color: var(--color-primary);
+
+}
+.container-login a:hover{
+    color: var(--color-alternate);
+}
+
+.container-login button{
+    padding: 5px;
+    width: 180px;
+    cursor: pointer;
+    margin-left: 85px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--color-alternate);
+    color: var(--color-info);
+}
+
+
