@@ -1,0 +1,50 @@
+@import url(../css/theme.css);
+
+
+
+
+/* ---------- SECCIÓN DEL NAVBAR ---------- */
+
+/* Estilos para el navbar */
+body{
+    margin: 0%;
+    padding: 0%;
+    background: white;
+}
+.navbar{
+    background-color: var(--color-alternate);
+    position: sticky;
+    display: flex;
+    padding: 3px 20px;
+
+}
+
+.logo{
+        /* Establece un diseño flexible en filas */
+    display: flex;
+        /* Color del texto del logo obtenido de una variable CSS */
+    color: var(--color-info);
+    /* Establece un espacio entre los elementos del logo */
+    gap: 12px;
+        /* Alinea los elementos verticalmente en el centro */
+    align-items: center;
+    
+}
+.logo img,
+.logo hr {
+    /* Establece una altura para los elementos del logo */
+    height: 35px;
+}
+.icono-menu{
+    margin: 40px 50px;
+    position: relative;
+    z-index: 10;
+}
+
+.icono-munu img{
+    vertical-align: top;
+    width: 40px;
+    cursor: pointer;
+}
+
+
